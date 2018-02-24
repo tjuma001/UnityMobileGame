@@ -1,4 +1,4 @@
-# UnityMobileGame 0.2
+# UnityMobileGame 0.3
 <html>
 <br>
   Version 0.1: ✓ Marble color changes ✓ Menu navigation ✓ Camera Smoothing
