@@ -9,11 +9,17 @@ public class Motor : MonoBehaviour {
     public float terminalRotationSpeed = 25.0f;
     public VirtualJoyStick moveJoystick;
 
+    public float boostSpeed = 5.0f;
+    public float boostCooldown = 2.0f;
+    private float lastBoost;
+
     private Rigidbody controller;
     private Transform camTransform;
 
     private void Start()
     {
+        lastBoost = Time.time - boostCooldown;
+
         controller = GetComponent<Rigidbody>();
         controller.maxAngularVelocity = terminalRotationSpeed;
         controller.drag = drag;
@@ -43,5 +49,14 @@ public class Motor : MonoBehaviour {
         rotatedDir = rotatedDir.normalized * dir.magnitude;
 
         controller.AddForce(rotatedDir * moveSpeed);
+    }
+
+    public void Boost()
+    {
+        if (Time.time - lastBoost > boostCooldown)
+        {
+            controller.AddForce(controller.velocity.normalized * boostSpeed, ForceMode.VelocityChange);
+        }
+
     }
 }
