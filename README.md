@@ -9,5 +9,5 @@
   <a href="https://ibb.co/g1c2cc"><img src="https://preview.ibb.co/mXPR3H/Joystick.png" alt="Joystick" border="0"></a>
 <br>
   Version 0.4: ✓ Rotate free camera w/ joystick ✓ Boost mechanic ✓ Finish Level w/ currency and time
-  <img src="https://giphy.com/gifs/46zwLMduIPevK9RuVR/html5" title="Version 0.4" />
+  <img src="https://media.giphy.com/media/46zwLMduIPevK9RuVR/giphy.gif" title="Version 0.4" />
 </html>
